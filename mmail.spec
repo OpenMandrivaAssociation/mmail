@@ -13,6 +13,7 @@ URL:		http://multimail.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}-0.47.patch
 BuildRequires:  ncurses-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 Conflicts:       mirror
 
