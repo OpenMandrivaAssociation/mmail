@@ -1,6 +1,6 @@
 %define name mmail
 %define version 0.47
-%define release %mkrel 1
+%define release %mkrel 3
 
 
 Name:		%{name}
