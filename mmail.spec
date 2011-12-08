@@ -50,11 +50,11 @@ export HELPDIR
 make install
 
 # fix attributes of docs
-chmod -R a+rX $RPM_BUILD_DIR/%{name}-%{version}/{COPYING,HISTORY,INSTALL,README,TODO,FAQ,colors}
+chmod -R a+rX %{_builddir}/%{name}-%{version}/{COPYING,HISTORY,INSTALL,README,TODO,FAQ,colors}
 
 %clean
 [ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
-rm -rf $RPM_BUILD_DIR/%{name}-%{version}
+rm -rf %{_builddir}/%{name}-%{version}
 
 
 %files
