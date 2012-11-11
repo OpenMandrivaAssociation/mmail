@@ -1,0 +1,27 @@
+--- mmail-0.47/Makefile.dist	2007-01-22 15:31:03.000000000 -0200
++++ mmail-0.47/Makefile	2007-01-22 15:31:54.000000000 -0200
+@@ -10,12 +10,13 @@
+ #OPTS = -g -Wall -pedantic -Wno-deprecated -Wno-char-subscripts
+ 
+ # Optimized, no debug:
+-OPTS = -O2 -Wall -pedantic -Wno-deprecated -Wno-char-subscripts
++#OPTS = -O2 -Wall -pedantic -Wno-deprecated -Wno-char-subscripts
++OPTS = $(RPM_OPT_FLAGS)
+ 
+ # PREFIX is the base directory under which to install the binary and man 
+ # page; generally either /usr/local or /usr (or perhaps /opt...):
+ 
+-PREFIX = /usr/local
++#PREFIX = /usr/local
+ 
+ # Delete command ("rm" or "del", as appropriate):
+ 
+@@ -89,7 +90,7 @@
+ #--------------------------------------------------------------
+ #--------------------------------------------------------------
+ 
+-HELPDIR = $(PREFIX)/man/man1
++#HELPDIR = $(PREFIX)/man/man1
+ 
+ all:	mm
+ 
