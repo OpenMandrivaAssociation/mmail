@@ -9,7 +9,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Networking/Mail
-URL:		http://multimail.sourceforge.net/
+URL:		https://multimail.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}-0.47.patch
 BuildRequires:  ncurses-devel
