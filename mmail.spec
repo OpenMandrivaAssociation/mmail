@@ -12,6 +12,7 @@ Group:		Networking/Mail
 URL:		https://multimail.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}-0.47.patch
+BuildRequires:	make
 BuildRequires:  ncurses-devel
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
